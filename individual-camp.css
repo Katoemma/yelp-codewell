@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 30px;
+}
+p{
+    color: #b4b2b2;;
+}
+.campground-image, .comments, .map{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid #c7c2c2;;
+    border-radius: 3px;
+
+}
+.campground-image img{
+    height: 200px;
+    border-radius: 4px;
+}
+.campground-text{
+    display: flex;
+    flex-direction: column;
+}
+.campground-text .name-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.campground-text .name-price p{
+    font-weight: 800;
+    color: #000000;
+}
+.campground-text p, i{
+    line-height: 25px;
+    letter-spacing: 0.1px;
+    color: #c7c2c2;
+}
+.name-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comments button{
+    width: 200px;
+    margin-top: 10px;
+}
