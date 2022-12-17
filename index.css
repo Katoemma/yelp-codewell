@@ -1,0 +1,32 @@
+body{
+    font-family: 'Archivo';
+}
+.page{
+    display: flex;
+    flex-direction: column;
+}
+.hero-img img{
+    width: 374px;
+    height: 300px
+}
+.hero-text{
+    padding: 12px;
+}
+.hero-text h1{
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.hero-text p{
+    color: #757373;
+    letter-spacing: 1px
+}
+.hero-text p img{
+    width: 15px;
+}
+.patner-logo{
+    display: flex;
+    justify-content: space-between;
+}
+.patner-logo #plum{
+    width: 100px;
+}

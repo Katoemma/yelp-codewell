@@ -1,0 +1,21 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 12px;
+}
+form label{
+    font-size: 14px;
+}
+form input{
+    background:  #e3dfdf;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 12px;
+}
+#description{
+    height: 200px;
+}
+#description::placeholder{
+    position:absolute ;
+}

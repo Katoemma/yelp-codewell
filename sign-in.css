@@ -1,0 +1,35 @@
+form h1{
+    letter-spacing: 2px;
+    font-weight: 1000;
+}
+form p a{
+    color: rgb(8, 169, 169);
+    font-weight: 700;
+}
+form p{
+    color: rgb(180, 169, 169);
+}
+.user-pref{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: rgb(242, 236, 236);
+}
+.user-pref p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    font-weight: 900;
+}
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+.testimonial-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(149, 143, 143);
+    line-height: 2px;
+}
