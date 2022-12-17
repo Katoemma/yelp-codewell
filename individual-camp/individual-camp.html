@@ -5,29 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="camps.css">
+    <title>camp</title>
+    <link rel="stylesheet" href="../camps/camps.css">
     <link rel="stylesheet" href="individual-camp.css">
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 </head>
 <body>
 <div class="promo">
     <p>This project was made by <a href="#">Kato</a> and designed by <a href="#"> CodeWell</a></p>
-    <img src="assets/Close.svg" alt="close">
+    <img src="../assets/Close.svg" alt="close">
 </div>
 <nav>
-    <img src="Assets/Logo.svg" alt="logo" class="logo">
+    <a href="../index.html"><img src="../Assets/Logo.svg" alt="logo" class="logo"></a>
     <div class="navigation">
-        <img src="assets/menu-outline.svg" alt="menu" class="menu-icon">
+        <img src="../assets/menu-outline.svg" alt="menu" class="menu-icon" onclick="open()">
         <div class="nav-btns">
-            <button type="submit" id="log-in-btn">Login</button>
-            <button type="submit" id="create-btn">Create an account</button>
+            <button type="submit" id="log-in-btn"><a href="../sign in/sign-in.html">Login</a></button>
+            <button type="submit" id="create-btn"><a href="../sign in/sign-up.html">Create an account</a></button>
         </div>
     </div>
 </nav>
 <div class="container">
 <div class="campground-image">
-    <img src="assets/Hero Image.jpg" alt="image">
+    <img src="../assets/Hero Image.jpg" alt="image">
     <div class="campground-text">
         <div class="name-price">
             <h1>Mount Ulap</h1>
@@ -65,11 +65,12 @@
     <button class="view-btn">Leave a Review</button>
 </div>
 <div class="map">
-    <img src="assets/Map.png" alt="">
+    <img src="../assets/Map.png" alt="map">
 </div>
 </div>
 <div class="btm-img">
-    <img src="assets/Logo.svg" alt="logo">
+    <img src="../assets/Logo.svg" alt="logo">
 </div>
+<script src="../index.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YelpCamp</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="camps.css">
+    <link rel="stylesheet" href="camps/camps.css">
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 </head>
 <body>
@@ -15,12 +15,12 @@
         <img src="assets/Close.svg" alt="close">
     </div>
     <nav>
-        <img src="Assets/Logo.svg" alt="logo" class="logo">
+        <a href="#"><img src="Assets/Logo.svg" alt="logo" class="logo"></a>
         <div class="navigation">
-            <img src="assets/menu-outline.svg" alt="menu" class="menu-icon">
+            <img src="assets/menu-outline.svg" alt="menu" class="menu-icon" onclick="open()">
             <div class="nav-btns">
-                <button type="submit" id="log-in-btn">Login</button>
-                <button type="submit" id="create-btn">Create an account</button>
+                <button type="submit" id="log-in-btn"><a href="sign in/sign-in.html">Login</a></button>
+                <button type="submit" id="create-btn"><a href="sign in/sign-up.html">Create an account</a></button>
             </div>
         </div>
     </nav>
@@ -36,7 +36,7 @@
                 <p><img src="assets/Checkmark.svg" alt=""> Leave reviews and experiences.</p>
                 <p><img src="assets/Checkmark.svg" alt=""> See locations for all camps</p>
             </div>
-            <button class="view-btn">View Campgrounds</button>
+            <button class="view-btn"><a href="camps/camps.html">View Campgrounds</a></button>
             <div class="patners">
                 <p>Partnered with:</p>
                 <div class="patner-logo">
@@ -47,6 +47,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="index.js"></script>
 </body>
 </html>

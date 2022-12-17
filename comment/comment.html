@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comment</title>
     <link rel="stylesheet" href="comment.css">
-    <link rel="stylesheet" href="camps.css">
+    <link rel="stylesheet" href="../camps/camps.css">
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
-    <link rel="stylesheet" href="new-camp.css">
+    <link rel="stylesheet" href="../new-camp/new-camp.css">
 </head>
 <body>
     <div class="promo">
         <p>This project was made by <a href="#">Kato</a> and designed by <a href="#"> CodeWell</a></p>
-        <img src="assets/Close.svg" alt="close">
+        <img src="../assets/Close.svg" alt="close">
     </div>
     <nav>
-        <img src="Assets/Logo.svg" alt="logo" class="logo">
+        <a href="../index.html"><img src="../Assets/Logo.svg" alt="logo" class="logo"></a>
         <div class="navigation">
-            <img src="assets/menu-outline.svg" alt="menu" class="menu-icon">
+            <img src="../assets/menu-outline.svg" alt="menu" class="menu-icon" onclick="open()">
             <div class="nav-btns">
-                <button type="submit" id="log-in-btn">Login</button>
-                <button type="submit" id="create-btn">Create an account</button>
+                <button type="submit" id="log-in-btn"><a href="../sign in/sign-in.html">Login</a></button>
+                <button type="submit" id="create-btn"><a href="../sign in/sign-up.html">Create an account</a></button>
             </div>
         </div>
     </nav>
@@ -32,7 +32,8 @@
         <button class="view-btn"> Post Comment</button>
     </form>
     <div class="btm-img">
-        <img src="assets/Logo.svg" alt="logo">
+        <img src="../assets/Logo.svg" alt="logo">
     </div>
+    <script src="../index.js"></script>
 </body>
 </html>

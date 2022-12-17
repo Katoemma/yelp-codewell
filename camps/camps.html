@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Camps</title>
     <link rel="stylesheet" href="camps.css">
     <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
 </head>
 <body>
 <div class="promo">
     <p>This project was made by <a href="#">Kato</a> and designed by <a href="#"> CodeWell</a></p>
-    <img src="assets/Close.svg" alt="close">
+    <img src="../assets/Close.svg" alt="close">
 </div>
 <nav>
-    <img src="Assets/Logo.svg" alt="logo" class="logo">
+    <a href="../index.html"><img src="../Assets/Logo.svg" alt="logo" class="logo"></a>
     <div class="navigation">
-        <img src="assets/menu-outline.svg" alt="menu" class="menu-icon">
+        <img src="../assets/menu-outline.svg" alt="menu" class="menu-icon" onclick="open()">
         <div class="nav-btns">
-            <button type="submit" id="log-in-btn">Login</button>
-            <button type="submit" id="create-btn">Create an account</button>
+            <button type="submit" id="log-in-btn"><a href="../sign in/sign-in.html">Login</a></button>
+            <button type="submit" id="create-btn"><a href="../sign in/sign-up.html">Create an account</a></button>
         </div>
     </div>
 </nav>
@@ -28,11 +28,11 @@
     <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
     <input type="text" name="search" id="search" placeholder="Search for camps">
     <button id="search-btn" >Search</button>
-    <a href="#">Or add your own campground</a>
+    <a href="../new-camp/new-camp.html">Or add your own campground</a>
 </div>
 <div class="cards">
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -40,7 +40,7 @@
         <button class="view-btn">View Campground</button>
     </div>
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -48,7 +48,7 @@
         <button class="view-btn">View Campground</button>
     </div>
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -56,7 +56,7 @@
         <button class="view-btn">View Campground</button>
     </div>
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -64,7 +64,7 @@
         <button class="view-btn">View Campground</button>
     </div>
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -72,7 +72,7 @@
         <button class="view-btn">View Campground</button>
     </div>
     <div class="card">
-        <img src="assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
+        <img src="../assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="image">
         <div class="text">
             <h3>Mount Ulap</h3>
             <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
@@ -81,7 +81,8 @@
     </div>
 </div>
 <div class="btm-img">
-    <img src="assets/Logo.svg" alt="logo">
+    <img src="../assets/Logo.svg" alt="logo">
 </div>
+<script src="../index.js"></script>
 </body>
 </html>
