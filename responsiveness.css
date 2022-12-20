@@ -14,4 +14,36 @@
     .nav-btns{
         display: flex;
     }
+    .page{
+        flex-direction: row-reverse;
+        padding-left: 100px;
+        gap: 60px;
+    }
+    .hero-img img{
+        width: 700px;
+        height: 99vh;
+    }
+    .hero-text{
+        width: 375px;
+    }
+    .welcome-note h1, p, form, a {
+        width: 330px;
+    }
+    .welcome-note form{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .login-text{
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+        padding-left: 120px;
+    }
+    .testimonial{
+        width: 700px;
+    }
 }
