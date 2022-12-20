@@ -19,16 +19,18 @@
     <div class="navigation">
         <img src="../assets/menu-outline.svg" alt="menu" class="menu-icon" onclick="open()">
         <div class="nav-btns">
-            <button type="submit" id="log-in-btn"><a href="../sign in/sign-in.html">Login</a></button>
-            <button type="submit" id="create-btn"><a href="../sign in/sign-up.html">Create an account</a></button>
+            <button type="submit" id="log-in-btn" class="view-btn"><a href="../sign in/sign-in.html">Login</a></button>
+            <button type="submit" id="create-btn" class="view-btn"><a href="../sign in/sign-up.html">Create an account</a></button>
         </div>
     </div>
 </nav>
 <div class="welcome-note">
     <h1>Welcome to YelpCamp!</h1>
     <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
-    <input type="text" name="search" id="search" placeholder="Search for camps">
-    <button id="search-btn" >Search</button>
+    <form action="">
+        <input type="text" name="search" id="search" placeholder="Search for camps">
+        <button id="search-btn" >Search</button>
+    </form>
     <a href="../new-camp/new-camp.html">Or add your own campground</a>
 </div>
 <div class="cards">

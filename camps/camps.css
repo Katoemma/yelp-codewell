@@ -42,6 +42,11 @@ nav{
 .welcome-note h1{
     font-weight: 800;
 }
+.welcome-note form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 .welcome-note p{
     font-size: 18px;
     color: #696868;
@@ -56,6 +61,18 @@ nav{
     font-weight: 600;
     color: #ffffff;
     font-size: 16px;
+}
+.view-btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#log-in-btn{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+}
+#log-in-btn a{
+    color: #000000;
 }
 #search::placeholder{
     font-size: 16px;
