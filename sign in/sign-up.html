@@ -55,6 +55,8 @@
                 if(elem.value != password.value){
                     document.getElementById("confirm-text").innerText = "password does not match";
                     flag = 0;
+                    confirmButton.disabled = false;
+                    confirmButton.style.cursor = "not-allowed";
                 }else{
                     document.getElementById("confirm-text").innerText = "";
                     flag = 1;
