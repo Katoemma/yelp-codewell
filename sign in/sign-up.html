@@ -23,15 +23,16 @@
         </div>
     </nav>
     <div class="login-text">
-        <form action="">
+        <form action="" onsubmit="return validate()">
             <h1>Start exploring camps from all around the world.</h1>
             <label for="username">Username</label>
             <input type="text" name="username" placeholder="Enter your name">
             <label for="password">Password</label>
-            <input type="password" name="password" id="" placeholder="Choose password">
+            <input type="password" name="password" id="paswrd" placeholder="Choose password">
             <label for="cfrm-pass">Confirm Password</label>
-            <input type="password" name="cfrm-pass" id="" placeholder="confirm password">
-            <button class="view-btn">Create an account</button>
+            <input type="password" name="cfrm-pass" id="cfrm-pass" placeholder="confirm password" onkeyup="verify(this)">
+            <p id="confirm-text"></p>
+            <button id="cbutton" class="view-btn" style="cursor:not-allowed" disabled>Create an account</button>
             <p>Already a user? <a href="sign-in.html">Sign in</a></p>
         </form>
         <div class="user-pref">
@@ -45,5 +46,32 @@
             </div>
         </div>
     </div>
+    <script>
+        var password = document.getElementById("paswrd");
+        var flag = 1;
+        var confirmButton = document.getElementById("cbutton")
+        function verify(elem) {
+            if(elem.value.length > 0){
+                if(elem.value != password.value){
+                    document.getElementById("confirm-text").innerText = "password does not match";
+                    flag = 0;
+                }else{
+                    document.getElementById("confirm-text").innerText = "";
+                    flag = 1;
+                    confirmButton.style.cursor = "pointer";
+                }
+            }else{
+                document.getElementById("confirm-text").innerText = "please confirm password";
+                flag = 0;
+            } 
+        }
+        function validate(){
+            if(flag == 1){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
