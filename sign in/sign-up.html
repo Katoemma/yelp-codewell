@@ -13,10 +13,12 @@
     <script src="../index.js"></script>
 </head>
 <body>
+    <!--promotion Advert-->
     <div class="promo" id="prom">
         <p>This project was made by <a href="#">Kato</a> and designed by <a href="#"> CodeWell</a></p>
         <img src="../Assets/Close.svg" alt="close" onclick="promo(this)">
     </div>
+    <!--navigation bar --> 
     <nav>
         <a href="../index.html"><img src="../Assets/Logo.svg" alt="logo" class="logo"></a>
         <div class="navigation">
@@ -24,6 +26,9 @@
         </div>
     </nav>
     <div class="login-text">
+
+        <!--sign up form-->
+
         <form action="" onsubmit="return validate()">
             <h1>Start exploring camps from all around the world.</h1>
             <label for="username">Username</label>
@@ -36,6 +41,7 @@
             <button id="cbutton" class="view-btn" style="cursor:not-allowed; background-color:rgb(62, 61, 61)" disabled>Create an account</button>
             <p>Already a user? <a href="sign-in.html">Sign in</a></p>
         </form>
+        <!--user Testimonial-->
         <div class="user-pref">
             <p>"YelpCamp has honestly saved me hours of research time, and the camps on here are definitely well picked and added."</p>
             <div class="testimonial">
@@ -48,12 +54,12 @@
         </div>
     </div>
     <script>
-        var password = document.getElementById("paswrd");
+        var password = document.getElementById("paswrd");// get the password element
         var flag = 1;
-        var confirmButton = document.getElementById("cbutton")
+        var confirmButton = document.getElementById("cbutton") // getting the submit button 
         function verify(elem) {
-            if(elem.value.length > 0){
-                if(elem.value != password.value){
+            if(elem.value.length > 0){ //for the password is not empty
+                if(elem.value != password.value){// for the password input is not equal
                     document.getElementById("confirm-text").innerText = "password does not match";
                     flag = 0;
                     confirmButton.disabled = false;
@@ -69,7 +75,7 @@
                 flag = 0;
             } 
         }
-        function validate(){
+        function validate(){ //validation of the form
             if(flag == 1){
                 return true;
             }else{
