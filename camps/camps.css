@@ -21,7 +21,7 @@ nav{
     padding: 24px 12px;
 }
 .navigation {
-    display: inline;
+    display: inline-block;
 }
 .menu-icon{
     width: 30px;
@@ -29,6 +29,7 @@ nav{
 }
 .nav-btns{
     display: none;
+    position: absolute;
 }
 .welcome-note {
     padding: 24px;
