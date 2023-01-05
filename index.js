@@ -6,7 +6,6 @@ function promo(elem) {
 }
 
 // js to trigger the navigation bar  in the mobile view
-var btns = document.getElementsByClassName("nav-btns");
-function open(x) {
-    btns.style.display = "block";
+function open() {
+    document.getElementsByClassName("nav-btns").style.display = "block";
 }
