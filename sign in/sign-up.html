@@ -56,22 +56,23 @@
     <script>
         var password = document.getElementById("paswrd");// get the password element
         var flag = 1;
-        var confirmButton = document.getElementById("cbutton") // getting the submit button 
+        var confirmButton = document.getElementById("cbutton"); // getting the submit button
+        var confirmText = document.getElementById("confirm-text"); 
         function verify(elem) {
             if(elem.value.length > 0){ //for the password is not empty
                 if(elem.value != password.value){// for the password input is not equal
-                    document.getElementById("confirm-text").innerText = "password does not match";
+                    confirmText.innerText = "password does not match";
                     flag = 0;
                     confirmButton.disabled = false;
                     confirmButton.style.cursor = "not-allowed";
                 }else{
-                    document.getElementById("confirm-text").innerText = "";
+                    confirmText.innerText = "";
                     flag = 1;
                     confirmButton.style.cursor = "pointer";
                     confirmButton.style.backgroundColor = "green";
                 }
             }else{
-                document.getElementById("confirm-text").innerText = "please confirm password";
+                confirmText.innerText = "please confirm password";
                 flag = 0;
             } 
         }
